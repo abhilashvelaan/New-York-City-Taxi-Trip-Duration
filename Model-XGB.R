@@ -1,8 +1,8 @@
 library(data.table)
 
 #load data usind fread
-train = fread("E:\\ATI\\@class\\AB\\@prac\\NYC TAXI\\Data\\train.csv", stringsAsFactors = T)
-test = fread("E:\\ATI\\@class\\AB\\@prac\\NYC TAXI\\Data\\test.csv", stringsAsFactors = T)
+train = fread("\\NYC TAXI\\Data\\train.csv", stringsAsFactors = T)
+test = fread("\\NYC TAXI\\Data\\test.csv", stringsAsFactors = T)
 
 model_train = train
 model_test = test
@@ -89,12 +89,12 @@ model_test <- model_test %>%
 
 ##external data
 # load weather data 
-weather = fread("E:\\ATI\\@class\\AB\\@prac\\NYC TAXI\\EXTERNAL DATA\\WEATHER DATA\\weather_data_nyc_centralpark_2016.xls")
+weather = fread("\\NYC TAXI\\EXTERNAL DATA\\WEATHER DATA\\weather_data_nyc_centralpark_2016.xls")
 
 #fastest_route data
-train_1 = fread("E:\\ATI\\@class\\AB\\@prac\\NYC TAXI\\EXTERNAL DATA\\OSCARLEO-OSRM\\fastest_routes_train_part_1.csv")
-train_2 = fread("E:\\ATI\\@class\\AB\\@prac\\NYC TAXI\\EXTERNAL DATA\\OSCARLEO-OSRM\\fastest_routes_train_part_2.csv")
-test_1 = fread("E:\\ATI\\@class\\AB\\@prac\\NYC TAXI\\EXTERNAL DATA\\OSCARLEO-OSRM\\fastest_routes_test.csv")
+train_1 = fread("\\NYC TAXI\\EXTERNAL DATA\\OSCARLEO-OSRM\\fastest_routes_train_part_1.csv")
+train_2 = fread("\\NYC TAXI\\EXTERNAL DATA\\OSCARLEO-OSRM\\fastest_routes_train_part_2.csv")
+test_1 = fread("\\NYC TAXI\\EXTERNAL DATA\\OSCARLEO-OSRM\\fastest_routes_test.csv")
 
 library(tidyverse)
 library(stringr)
